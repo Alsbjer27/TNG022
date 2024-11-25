@@ -33,7 +33,7 @@ equation
   connect(inductor.n, emf.p) annotation(
     Line(points = {{0, 2}, {28, 2}, {28, -8}}, color = {0, 0, 255}));
   connect(emf.n, ground.p) annotation(
-    Line(points = {{28, -28}, {-26, -28}, {-26, -38}}, color = {0, 0, 255}));
+    Line(points = {{28, -28}, {29, -28}, {29, -38}, {-26, -38}}, color = {0, 0, 255}));
   connect(ground.p, constantVoltage.n) annotation(
     Line(points = {{-26, -38}, {-80, -38}, {-80, -30}}, color = {0, 0, 255}));
   connect(emf.flange, damper.flange_a) annotation(
