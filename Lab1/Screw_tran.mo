@@ -5,7 +5,7 @@ model Screw_tran
     Placement(transformation(origin = {-36, 0}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Mechanics.Translational.Components.Spring spring(c = 7.5e4)  annotation(
     Placement(transformation(origin = {32, 0}, extent = {{-10, -10}, {10, 10}})));
-  Modelica.Mechanics.Translational.Components.IdealGearR2T idealGearR2T annotation(
+  Modelica.Mechanics.Translational.Components.IdealGearR2T idealGearR2T(ratio = 2.48e2)  annotation(
     Placement(transformation(origin = {-2, 0}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Mechanics.Translational.Interfaces.Flange_b flange_b annotation(
     Placement(transformation(origin = {62, 0}, extent = {{-10, -10}, {10, 10}}), iconTransformation(origin = {26, 0}, extent = {{-10, -10}, {10, 10}})));

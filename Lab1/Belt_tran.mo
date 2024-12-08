@@ -1,7 +1,7 @@
 model Belt_tran
   Modelica.Mechanics.Rotational.Interfaces.Flange_a flange_a annotation(
     Placement(transformation(origin = {-92, 0}, extent = {{-8, -8}, {8, 8}}), iconTransformation(origin = {-86, 0}, extent = {{-10, -10}, {10, 10}})));
-  Modelica.Mechanics.Rotational.Components.Damper damper(d = 2e-5)  annotation(
+  Modelica.Mechanics.Rotational.Components.Damper damper(d = 0)  annotation(
     Placement(transformation(origin = {-52, -10}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
   Modelica.Mechanics.Rotational.Components.Fixed fixed annotation(
     Placement(transformation(origin = {-52, -26}, extent = {{-10, -10}, {10, 10}})));
@@ -9,17 +9,17 @@ model Belt_tran
     Placement(transformation(origin = {-72, 0}, extent = {{-8, -8}, {8, 8}})));
   Modelica.Mechanics.Rotational.Components.Inertia inertia1(J = 1.63e-4)  annotation(
     Placement(transformation(origin = {60, 0}, extent = {{-10, -10}, {10, 10}})));
-  Modelica.Mechanics.Rotational.Components.Damper damper1(d = 5e-5)  annotation(
+  Modelica.Mechanics.Rotational.Components.Damper damper1(d = 0)  annotation(
     Placement(transformation(origin = {80, -10}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
   Modelica.Mechanics.Rotational.Components.Fixed fixed1 annotation(
     Placement(transformation(origin = {80, -26}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Mechanics.Rotational.Interfaces.Flange_b flange_b annotation(
     Placement(transformation(origin = {92, 0}, extent = {{-8, -8}, {8, 8}}), iconTransformation(origin = {92, 0}, extent = {{-10, -10}, {10, 10}})));
-  Modelica.Mechanics.Translational.Components.IdealGearR2T idealGearR2T annotation(
+  Modelica.Mechanics.Translational.Components.IdealGearR2T idealGearR2T(ratio = 100)  annotation(
     Placement(transformation(origin = {-30, 0}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Mechanics.Translational.Components.Spring spring1(c = 6.67e4)  annotation(
     Placement(transformation(origin = {2, 0}, extent = {{-10, -10}, {10, 10}})));
-  Modelica.Mechanics.Translational.Components.IdealGearR2T idealGearR2T1 annotation(
+  Modelica.Mechanics.Translational.Components.IdealGearR2T idealGearR2T1(ratio = 25)  annotation(
     Placement(transformation(origin = {32, 0}, extent = {{10, -10}, {-10, 10}}, rotation = -0)));
 equation
   connect(flange_a, inertia.flange_a) annotation(
