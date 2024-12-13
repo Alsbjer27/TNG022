@@ -9,7 +9,7 @@ model Robot_arm
     Placement(transformation(origin = {-52, -30}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Mechanics.Translational.Sources.Force force annotation(
     Placement(transformation(origin = {8, 0},extent = {{10, -10}, {-10, 10}})));
-  Modelica.Blocks.Sources.Constant const(k = -54)  annotation(
+  Modelica.Blocks.Sources.Constant const(k = -9.81)  annotation(
     Placement(transformation(origin = {52, 0}, extent = {{10, -10}, {-10, 10}})));
 equation
   connect(force.f, const.y) annotation(

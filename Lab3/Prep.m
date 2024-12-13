@@ -1,0 +1,1 @@
+theta = mkskatt(y,u)
